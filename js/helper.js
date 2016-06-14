@@ -181,6 +181,12 @@ function initializeMap() {
     // hmmmm, I wonder what this is about...
     google.maps.event.addListener(marker, 'click', function() {
       infoWindow.open(map, marker)
+      /*
+      this zooms the map when clicking on a marker.
+      Source: https://developers.google.com/maps/documentation/javascript/examples/event-simple
+      */
+      map.setZoom(14);
+      map.setCenter(marker.getPosition());
     });
 
     // this is where the pin actually gets added to the map.
@@ -190,6 +196,9 @@ function initializeMap() {
     map.fitBounds(bounds);
     // center the map
     map.setCenter(bounds.getCenter());
+    // this blocks the map's scrollwheel.
+    // Source: http://stackoverflow.com/questions/15327783/enable-scrollwheel-zooming-on-a-map-upon-click-using-google-maps-api
+    map.set('scrollwheel', false);
   }
 
   /*
