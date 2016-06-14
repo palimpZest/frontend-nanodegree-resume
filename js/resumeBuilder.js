@@ -58,7 +58,7 @@ var projects = {
 	{
 		"title" : "Internet Website",
 		"dates" : "2016",
-		"description" : "A website about the internet created using HTML and CSS:",
+		"description" : "A website about the Internet created using HTML and CSS:",
 		"images" : ["images/first_website.gif"]
 	},
 	{
@@ -79,7 +79,7 @@ var projects = {
 var education = {
     "schools" : [
     {
-        "name": "School1",
+        "name": "School 1",
         "location": "Paris",
         "degree": "Degree 1",
         "majors" : ["Major A", " Major B"],
@@ -87,7 +87,7 @@ var education = {
         "url" : ""
     },
     {
-        "name": "School2",
+        "name": "School 2",
         "location": "São Paulo",
         "degree": "Degree 2",
         "majors" : ["Major A", " Major B"],
@@ -95,7 +95,7 @@ var education = {
         "url" : ""
     },
     {
-        "name": "School3",
+        "name": "School 3",
         "location": "Madrid",
         "degree": "Degree 3",
         "majors" : ["Major A", " Major B"],
