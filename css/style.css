@@ -9,8 +9,8 @@ h3,
 h4,
 h5,
 h6 {
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
   font-family: "Roboto", sans-serif;
 }
 
@@ -24,33 +24,44 @@ h6 {
   padding: 0 5%;
 }
 
+#main,
+#workExperience,
+#projects,
+#education,
+#mapDiv {
+  background-color: #eee;
+}
+
+hr {
+  border-color: #0c9;
+}
+
 h1 {
-  font-size: 40px;
-  color: #f5a623;
-  line-height: 48px;
+  font: 33px/30px "Lato", sans-serif;
+  color: #fff;
   display: inline;
+  text-shadow: 2px 2px #000;
 }
 
 h2 {
-  font-weight: bold;
-  font-size: 24px;
-  color: #999;
-  line-height: 29px;
+  font: bold 30px/29px "Fjalla One", sans-serif;
+  color: #0c9;
   padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+  text-shadow: 2px 2px #667;
 }
 
 h3 {
-  font-style: italic;
-  font-size: 20px;
-  color: #000;
-  line-height: 22px;
+  font: italic 20px/22px "Baumans", cursive;
+  color: #0c9;
+  text-decoration: underline;
+  text-shadow: 0.5px 0.5px #000;
 }
 
 h4 {
-  font-weight: bold;
-  font-size: 14px;
-  color: #4a4a4a;
-  line-height: 17px;
+  font: bold 14px/17px;
+  color: #333;
 }
 
 h2,
@@ -58,58 +69,67 @@ h3,
 h4,
 h5 {
   padding:10px 5%;
-
 }
 
+.date-text,
+.location-text {
+  font: italic bold 14px/16px "Baumans", cursive;
+}
 
 .date-text {
-  font-style: italic;
-  font-size: 14px;
-  color: #999;
-  line-height: 16px;
+  color: #667;
   float: left;
 }
 
 .location-text {
-  font-style: italic;
-  font-size: 14px;
-  color: #999;
-  line-height: 16px;
+  color: #667;
   float: right;
+}
 
+.center-text {
+  border-radius: 25px 25px 0 0;
 }
 
 p {
-  font-size: 14px;
-  color: #333;
-  line-height: 21px;
+  font: 17px/21px "Lato", sans-serif;
+  color: #667;
+  text-align: justify;
 }
 
 a {
-  color: #1199c3;
+  font: 22px/25px "Baumans", cursive;
+  color: #355d9a;
   text-decoration: none;
   margin-top: 10px;
   display: block;
 }
 
+em {
+  color: #667;
+  font-size: 17px;
+}
+
 .welcome-message {
-  font-style: italic;
-  font-size: 18px;
-  color: #f3f3f3;
-  line-height: 28px;
+  font: italic 20px/28px;
+}
+
+#skills {
+  display: block;
 }
 
 #skills-h3 {
-  color: #f5ae23;
-  display: none;
+  display: block;
+  text-shadow: 0.5px 0.5px #000;
 }
 
 .orange {
-  background-color: #f5ae23;
+  background-color: #bdb;
 }
 
 .orange-text {
-  color: #f5ae23;
+  color: #0c9;
+  text-shadow: 0.5px 0.5px #000;
+  font-family: "Baumans", cursive;
 }
 
 .white-text {
@@ -118,18 +138,20 @@ a {
 }
 
 .gray {
-  background-color: #f3f3f3;
+  background-color: #eee;
   padding-bottom: 10px;
-  clear:both;
+  clear: both;
 }
 
 .dark-gray {
-  background-color: #4a4a4a;
+  background-color: #eee;
 }
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+  background-color: #355d9a;
+  border-radius: 0 0 15px 15px;
+  padding: 10px 30px 10px;
 }
 
 .flex-box {
@@ -153,19 +175,33 @@ ul {
   float: left;
   padding: 10px;
   width: 200px;
-  display: none;
+  display: inline;
 }
 
 img {
   padding: 10px;
+  display: block;
+  margin: 10px auto;
+  border-radius: 25px;
 }
 
 span {
   padding: 5px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* Adds border-radius only to map. */
+#mapDiv > div {
+  border-radius: 25px;
 }
 
 #lets-connect {
   text-align: center;
+}
+
+#footerContacts {
+  background-color: #355d9a;
 }
 
 /* Media queries to handle various device widths */
